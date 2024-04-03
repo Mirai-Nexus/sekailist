@@ -1,0 +1,28 @@
+.ContainerNavBar{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 12vw;
+}
+.Logo{
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 900;
+    color: white;
+}
+.ContainerLista{
+    font-size: 18px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: -7%;
+}
+.ContainerLista > li{
+    cursor: pointer;
+}
+.ContainerProfile{
+    cursor: pointer;
+}

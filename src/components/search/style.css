@@ -1,0 +1,14 @@
+.ContainerInput{
+
+}
+.InputSearch{
+    height: 36px;
+    width: 30vw;
+    padding: 10px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+    outline: none;
+    color: #fff;
+    z-index: 10;
+}
