@@ -11,6 +11,7 @@
     font-style: italic;
     font-weight: 900;
     color: white;
+    z-index: 2;
 }
 .ContainerLista{
     font-size: 18px;
@@ -19,10 +20,12 @@
     justify-content: center;
     align-items: center;
     margin-right: -7%;
+    z-index: 2;
 }
 .ContainerLista > li{
     cursor: pointer;
 }
 .ContainerProfile{
     cursor: pointer;
+    z-index: 2;
 }
