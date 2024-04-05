@@ -1,5 +1,8 @@
 .ContainerInput{
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 .InputSearch{
     height: 36px;
@@ -10,5 +13,16 @@
     border-radius: 6px;
     outline: none;
     color: #fff;
+    z-index: 10;
+}
+.InputSearch::placeholder{
+    color: white;
+}
+.buttonSearch{
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
     z-index: 10;
 }
