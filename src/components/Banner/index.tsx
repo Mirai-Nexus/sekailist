@@ -20,18 +20,20 @@ export default function Banner() {
     }, [contador, mediaList.length]);
 
     return (
-        <div className="Container">
-            {mediaList.map((imagem, index) =>
-                <div key={imagem.id} style={{ display: index === contador ? 'block' : 'none' }}>
-                    <Image src={imagem.src} alt={imagem.alt} sizes="100%" fill className="slides"/>
+        <div>
+            <div  className="Container">
+                {mediaList.map((imagem, index) =>
+                    <div key={imagem.id} style={{ display: index === contador ? 'block' : 'none' }}>
+                        <Image src={imagem.src} alt={imagem.alt} sizes="100%" fill className="slides"/>
+                    </div>
+                )}
+                <div className="navigation">
+                    <div className="bar" id="slide0" onClick={(e) => setContador(0)} style={{ backgroundColor: contador === 0 ? 'white' : 'transparent'}}></div>
+                    <div className="bar" id="slide1" onClick={(e) => setContador(1)} style={{ backgroundColor: contador === 1 ? 'white' : 'transparent'}}></div>
+                    <div className="bar" id="slide2" onClick={(e) => setContador(2)} style={{ backgroundColor: contador === 2 ? 'white' : 'transparent'}}></div>
+                    <div className="bar" id="slide3" onClick={(e) => setContador(3)} style={{ backgroundColor: contador === 3 ? 'white' : 'transparent'}}></div>
+                    <div className="bar" id="slide4" onClick={(e) => setContador(4)} style={{ backgroundColor: contador === 4 ? 'white' : 'transparent'}}></div>
                 </div>
-            )}
-            <div className="navigation">
-                <div className="bar" id="slide0" onClick={(e) => setContador(0)} style={{ backgroundColor: contador === 0 ? 'white' : 'transparent'}}></div>
-                <div className="bar" id="slide1" onClick={(e) => setContador(1)} style={{ backgroundColor: contador === 1 ? 'white' : 'transparent'}}></div>
-                <div className="bar" id="slide2" onClick={(e) => setContador(2)} style={{ backgroundColor: contador === 2 ? 'white' : 'transparent'}}></div>
-                <div className="bar" id="slide3" onClick={(e) => setContador(3)} style={{ backgroundColor: contador === 3 ? 'white' : 'transparent'}}></div>
-                <div className="bar" id="slide4" onClick={(e) => setContador(4)} style={{ backgroundColor: contador === 4 ? 'white' : 'transparent'}}></div>
             </div>
         </div>
     )

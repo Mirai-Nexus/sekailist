@@ -16,7 +16,7 @@
 .ContainerLista{
     font-size: 18px;
     display: flex;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     margin-right: -7%;
