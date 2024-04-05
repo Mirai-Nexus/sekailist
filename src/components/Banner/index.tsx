@@ -20,7 +20,6 @@ export default function Banner() {
     }, [contador, mediaList.length]);
 
     return (
-        <div>
             <div  className="Container">
                 {mediaList.map((imagem, index) =>
                     <div key={imagem.id} style={{ display: index === contador ? 'block' : 'none' }}>
@@ -35,6 +34,5 @@ export default function Banner() {
                     <div className="bar" id="slide4" onClick={(e) => setContador(4)} style={{ backgroundColor: contador === 4 ? 'white' : 'transparent'}}></div>
                 </div>
             </div>
-        </div>
     )
 }

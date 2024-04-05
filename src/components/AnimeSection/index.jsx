@@ -1,12 +1,36 @@
 import "./style.css"
 import Image from "next/image"
+import { listcard } from "@/data/listcard"
+import Link from 'next/link'
 
 export default function AnimeSection() {
+
+    const id = 1
+
+    const slideLeft = () => {
+        var slider = document.getElementById(id)
+        slider.scrollLeft = slider.scrollLeft - 1100
+    }
+
+    const slideRight = () => {
+        var slider = document.getElementById(id)
+        slider.scrollLeft = slider.scrollLeft + 1100
+    }
+
     return (
-        <section className="SectionAnimeContainer">
-            <h2 className="TituloSection">Animes da Temporada</h2>
-            <Image src={"/icons/arrow-left.svg"} alt="Voltar" width={40} height={40} />
-            <Image src={"/icons/arrow-right.svg"} alt="Avançar" width={40} height={40} />
+        <section>
+        <h2 className='name-section'>Animes da temporada</h2>
+        <div className='list-section'>
+            <Image src={'/icons/arrow-left.svg'} alt="Voltar" onClick={slideLeft} width={40} height={40}  className='arrow' />
+            <div id={id} className='slider-list'>
+                {listcard.map((card) => (
+                    <Link key={card.id} href={`anime/${card.id}`}>             
+                        <div key={card.id} style={{ backgroundImage: `url(${card.url})`, backgroundSize: "cover"}} className='item-section'/>
+                    </Link>
+                ))}
+            </div>
+            <Image src={'/icons/arrow-right.svg'} alt="Avançar" onClick={slideRight} width={40} height={40}  className='arrow' />
+        </div>
         </section>
     )
 }

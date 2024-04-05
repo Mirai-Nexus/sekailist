@@ -8,7 +8,10 @@ export default function Home() {
     <main style={{overflowX: "hidden"}}>
       <NavBar/>
       <Banner/>
-      <AnimeSection/>
+      <div style={{marginTop:"70vh"}}>
+        <AnimeSection/>
+        <AnimeSection/>
+      </div>
     </main>
   );
 }

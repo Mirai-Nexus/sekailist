@@ -1,7 +1,67 @@
-.SectionAnimeContainer{
-    width: 100vw;
+section{
+    width: 100%;
 }
-.TituloSection{
-    margin-top: 70vh;
+
+.list-section {
+    padding-top: 1rem;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    width: calc(100vw - 1vw);
+    height: 380px;
+}
+
+.slider-list {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.slider-list::-webkit-scrollbar {
+    display: none;
+}
+.item-section {
+    width: 220px;
+    height: 320px;
+    border-radius: 2rem;
+    cursor: pointer;
+    filter: brightness(80%);
+}
+.item-section:hover{
+    top: -2px;
+    filter: brightness(100%);
+}
+.name-section {
+    max-width: 100%;
     color: white;
+    position: relative;
+    margin-top: 4rem;
+    padding-left: 3vw;
+}
+
+.arrow {
+    color: white;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    opacity: 100%;
+}
+
+
+.item-section:hover {
+    scale: 1.08;
+    transition: ease-in-out;
+    transition-duration: 50ms;
 }
