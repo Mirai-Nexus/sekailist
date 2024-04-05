@@ -2,7 +2,7 @@ import "./style.css"
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-export default function Slider() {
+export default function Banner() {
     const mediaList = [
         { id: 1, type: 'image', src: '/banner/banner.png', alt: 'Banner', idInput: "slide1 s1"},
         { id: 2, type: 'image', src: '/banner/banner2.png', alt: 'Banner2', idInput: "slide2" },

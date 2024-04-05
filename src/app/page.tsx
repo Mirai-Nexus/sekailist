@@ -1,11 +1,11 @@
 "use client"
 import NavBar from "@/components/navbar";
-import Slider from "@/components/slider";
+import Banner from "@/components/Banner";
 export default function Home() {
   return (
     <main>
       <NavBar/>
-      <Slider/>
+      <Banner/>
     </main>
   );
 }
