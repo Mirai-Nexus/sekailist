@@ -47,6 +47,8 @@ section{
     position: relative;
     margin-top: 4rem;
     padding-left: 3vw;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .arrow {

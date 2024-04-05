@@ -9,8 +9,8 @@ export default function Home() {
       <NavBar/>
       <Banner/>
       <div style={{marginTop:"70vh"}}>
-        <AnimeSection/>
-        <AnimeSection/>
+        <AnimeSection id={"1"} />
+        <AnimeSection id={"2"} />
       </div>
     </main>
   );
