@@ -2,6 +2,7 @@
 import AnimeSection from "@/components/AnimeSection"
 import NavBar from "@/components/navbar";
 import Banner from "@/components/Banner";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <AnimeSection id={"1"} />
         <AnimeSection id={"2"} />
       </div>
+      <Footer/>
     </main>
   );
 }

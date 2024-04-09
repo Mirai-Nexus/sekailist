@@ -18,6 +18,7 @@
 .ContainerMenuHamburguer {
     z-index: 11;
     cursor: pointer;
+    display: none;
 }
 
 .ContainerLista {
@@ -50,8 +51,52 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+.IconMenuAberto{
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
+    .ContainerNavBar {
+        padding: 0.5rem 2vw 0 2vw;
+    }
+    
     .ContainerLista {
       display: none;
     }
-  }
+    .ContainerProfile{
+        display: none;
+    }
+    .ContainerMenuHamburguer{
+        display: block;
+    }
+    .BoxMenuEscondido{
+        margin: auto;
+        width: 90vw;
+        display: grid;
+        gap: 20px;
+    }
+    .IconMenuAberto{
+        margin-top: 20px;
+    }
+    .BoxProfile{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .ImagemPerfilMobile{
+        cursor: pointer;
+    }
+    .BoxProfile span {
+        cursor: pointer;
+    }
+    .LinhaDivisa{
+        width: 90vw;
+        height: 1px;
+        background-color: white;
+    }
+    .ContainerListaMob li{
+        margin-bottom: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

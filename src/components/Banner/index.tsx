@@ -8,9 +8,36 @@ export default function Banner() {
         { id: 2, type: 'image', src: '/banner/banner2.png', alt: 'Banner2', idInput: "slide2" },
         { id: 3, type: 'image', src: '/banner/banner3.jpg', alt: 'Banner3', idInput: "slide3" },
         { id: 4, type: 'image', src: '/banner/banner4.jpg', alt: 'Banner4', idInput: "slide4" },
-        { id: 5, type: 'image', src: '/banner/banner5.jpg', alt: 'Banner5', idInput: "slide5" },
+        { id: 5, type: 'image', src: '/banner/banner5.jpeg', alt: 'Banner5', idInput: "slide5" },
+    ]
+    const mediaListMob = [
+        { id: 1, type: 'image', src: '/banner/mob1.webp', alt: 'Banner', idInput: "slide1 s1"},
+        { id: 2, type: 'image', src: '/banner/mob2.webp', alt: 'Banner2', idInput: "slide2" },
+        { id: 3, type: 'image', src: '/banner/mob3.webp', alt: 'Banner3', idInput: "slide3" },
+        { id: 4, type: 'image', src: '/banner/mob4.webp', alt: 'Banner4', idInput: "slide4" },
+        { id: 5, type: 'image', src: '/banner/mob5.webp', alt: 'Banner5', idInput: "slide5" },
     ]
     const [contador, setContador] = useState(1)
+    const [mob, setMob] = useState(false)
+    const [query, setQuery] = useState(0);
+
+    useEffect(() => {
+        const atualizarLarguraDaTela = () => {
+            setQuery(window.innerWidth);
+            if (window.innerWidth > 600) {
+                setMob(true);
+            } else {
+                setMob(false);
+            }
+        };
+
+        atualizarLarguraDaTela(); 
+        window.addEventListener("resize", atualizarLarguraDaTela);
+
+        return () => {
+            window.removeEventListener("resize", atualizarLarguraDaTela);
+        };
+    }, []); 
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -21,7 +48,12 @@ export default function Banner() {
 
     return (
             <div  className="Container">
-                {mediaList.map((imagem, index) =>
+                { mob  && mediaList.map((imagem, index) =>
+                    <div key={imagem.id} style={{ display: index === contador ? 'block' : 'none' }}>
+                        <Image src={imagem.src} alt={imagem.alt} sizes="100%" fill className="slides"/>
+                    </div>
+                )}
+                { mob === false && mediaListMob.map((imagem, index) =>
                     <div key={imagem.id} style={{ display: index === contador ? 'block' : 'none' }}>
                         <Image src={imagem.src} alt={imagem.alt} sizes="100%" fill className="slides"/>
                     </div>

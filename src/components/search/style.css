@@ -1,10 +1,11 @@
-.ContainerInput{
+.ContainerInput {
     z-index: 2;
     display: flex;
     justify-content: center;
     position: relative;
 }
-.InputSearch{
+
+.InputSearch {
     height: 36px;
     width: 30vw;
     padding: 10px;
@@ -15,14 +16,28 @@
     color: #fff;
     z-index: 10;
 }
-.InputSearch::placeholder{
+
+.InputSearch::placeholder {
     color: white;
 }
-.buttonSearch{
+
+.buttonSearch {
     position: absolute;
     top: 50%;
     left: 95%;
     transform: translate(-50%, -50%);
     cursor: pointer;
     z-index: 10;
+}
+
+@media (max-width: 600px) {
+    .InputSearch {
+        width: 60vw;
+    }
+    .InputSearch::placeholder {
+        display: none;
+    }
+    .icon-search {
+        display: none;
+    }
 }
