@@ -4,3 +4,7 @@ export interface GeneroInterface {
     url: string,
     href: string
 } 
+export interface GeneroInterfaceList {
+    id: number,
+    url: string,
+} 

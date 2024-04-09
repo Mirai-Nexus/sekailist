@@ -1,4 +1,5 @@
-export const listcard = [
+import { GeneroInterfaceList } from "@/interface/genero.interface"
+export const listcard:GeneroInterfaceList [] = [
     {
         id: 1,
         url: "/card.webp"
