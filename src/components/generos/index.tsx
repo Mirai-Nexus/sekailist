@@ -10,7 +10,7 @@ export default function Generos(props: { midia: GeneroInterface[] }) {
                     <Link key={objeto.id} href={`${objeto.href}`}>
                         <div style={{ width: '290px', height: "290px" }}>
                             <h3 className="title-generos">{objeto.nome}</h3>
-                            <div className="card-genero" style={{ backgroundImage: `url(${objeto.url})`, filter: 'brightness(70%)' }} ></div>
+                            <div className="card-genero" style={{ backgroundImage: `url(${objeto.url})`, filter: 'brightness(60%)' }} ></div>
                         </div>
                     </Link>
                 ))}

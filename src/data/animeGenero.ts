@@ -4,44 +4,43 @@ export  const AnimeGenero:GeneroInterface [] = [
         id: 1,
         nome: "Ação",
         url: "/anime/acao.webp",
-        href: "/acao"
+        href: "genero/acao"
     },
     {
         id: 2,
         nome: "Aventura",
-        url: "/anime/aventura.webp"
-        ,
-        href: "/aventura",
+        url: "/anime/aventura.webp",
+        href: "genero/aventura",
     },
     {
         id: 3,
         nome: "Avant Garde",
         url: "/anime/avant-garde.webp",
-        href: "/avant-garde"
+        href: "genero/avant-garde"
     },
     {
         id: 4,
         nome: "Mistério",
         url: "/anime/misterio.webp",
-        href: "/misterio"
+        href: "genero/misterio"
     },
     {
         id: 5,
         nome: "Sobrenatural",
         url: "/anime/sobrenatural.webp",
-        href: "/sobrenatural"
+        href: "genero/sobrenatural"
     },
     {
         id: 6,
         nome: "Comédia",
         url: "/anime/comedia.webp",
-        href: "/comedia"
+        href: "genero/comedia"
     },
     {
         id: 7,
         nome: "Drama",
         url: "/anime/drama.webp",
-        href: "/drama"
+        href: "genero/drama"
     },
     {
         id: 8,
@@ -83,19 +82,19 @@ export  const AnimeGenero:GeneroInterface [] = [
         id: 14,
         nome: "Slice of Life",
         url: "/anime/sliceoflife.webp",
-        href: "/slice-of-life"
+        href: "genero/slice-of-life"
     },
     {
         id: 15,
         nome: "Sport",
         url: "/anime/sport.webp",
-        href: "/sport"
+        href: "genero/sport"
     },
     {
         id: 16,
         nome: "Seinen",
         url: "/anime/seinen.webp",
-        href: "/seinen"
+        href: "genero/seinen"
     },
     
 ]
