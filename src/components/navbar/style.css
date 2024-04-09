@@ -1,0 +1,102 @@
+.ContainerNavBar {
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 12vw;
+}
+
+.Logo {
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 900;
+    color: white;
+    z-index: 2;
+}
+
+.ContainerMenuHamburguer {
+    z-index: 11;
+    cursor: pointer;
+    display: none;
+}
+
+.ContainerLista {
+    font-size: 18px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-right: -7%;
+    z-index: 2;
+}
+
+.ContainerLista>li {
+    cursor: pointer;
+}
+
+.ContainerProfile {
+    cursor: pointer;
+    z-index: 2;
+}
+
+.MenuEscondido {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-image: linear-gradient(0deg, #0d0c0d 0%, #2c0051 100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.IconMenuAberto{
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .ContainerNavBar {
+        padding: 0.5rem 2vw 0 2vw;
+    }
+    
+    .ContainerLista {
+      display: none;
+    }
+    .ContainerProfile{
+        display: none;
+    }
+    .ContainerMenuHamburguer{
+        display: block;
+    }
+    .BoxMenuEscondido{
+        margin: auto;
+        width: 90vw;
+        display: grid;
+        gap: 20px;
+    }
+    .IconMenuAberto{
+        margin-top: 20px;
+    }
+    .BoxProfile{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .ImagemPerfilMobile{
+        cursor: pointer;
+    }
+    .BoxProfile span {
+        cursor: pointer;
+    }
+    .LinhaDivisa{
+        width: 90vw;
+        height: 1px;
+        background-color: white;
+    }
+    .ContainerListaMob li{
+        margin-bottom: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,41 @@
+.Footer{
+    max-width: 100%;
+    padding: 5rem;
+    border-top: 3px solid #ffffff48;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 200px;
+}
+.Titulos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 100px;
+}
+.Titulos span{
+    font-size: 20px;
+}
+.Elementos p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.Titulos ul {
+    color: #cccccc;
+}
+.Elementos li{
+    display: flex;
+    gap: 7px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .Titulos{
+        grid-template-columns: 1fr;
+    }
+    .Titulos ul {
+        margin-bottom: 40px;
+    }
+  }
