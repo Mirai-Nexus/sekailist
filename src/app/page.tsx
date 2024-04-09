@@ -1,5 +1,5 @@
 "use client"
-import AnimeSection from "@/components/AnimeSection"
+import AnimeSection from "@/components/animeSection"
 import NavBar from "@/components/navbar";
 import Banner from "@/components/Banner";
 import Footer from "@/components/footer";

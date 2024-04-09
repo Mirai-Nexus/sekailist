@@ -1,0 +1,36 @@
+.Capsula {
+    width: 100vw;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+}
+.Capsula h1{
+    font-size: 32px;
+    font-weight: 800;
+}
+.ContainerGeneros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 90vw;
+    margin: 0 auto;
+}
+.title-generos {
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card-genero {
+    border-radius: 10px;
+    background-color: #333;
+    width: 290px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

@@ -2,6 +2,7 @@ import "./style.css"
 import Image from "next/image"
 import { SetStateAction, useState } from "react"
 import Search from "../search"
+import Link from "next/link"
 
 export default function NavBar() {
     const [inputValue, setInputValue] = useState("")
@@ -19,11 +20,17 @@ export default function NavBar() {
     }
     return (
         <div className="ContainerNavBar" style={{ color: "white" }}>
-            <h1 className="Logo">SL</h1>
+            <Link className="Logo" href={"/"}>
+                <h1 >SL</h1>
+            </Link>
             <Search />
             <ul className="ContainerLista">
-                <li>Animes</li>
-                <li>Mangás</li>
+                <Link href={"/anime"}>
+                    <li>Animes</li>
+                </Link>
+                <Link href={"/manga"}>
+                    <li>Mangás</li>
+                </Link>
                 <li>Notícias</li>
             </ul>
 
@@ -36,15 +43,19 @@ export default function NavBar() {
             </div>
             <div className="MenuEscondido" style={{ display: Menu }}>
                 <div className="BoxMenuEscondido">
-                <Image src={"/icons/back.svg"} style={{ display: Menu }} alt="menu hamburguer" width={40} height={40} onClick={clickMenu} className="IconMenuAberto" />
+                    <Image src={"/icons/back.svg"} style={{ display: Menu }} alt="menu hamburguer" width={40} height={40} onClick={clickMenu} className="IconMenuAberto" />
                     <div className="BoxProfile">
-                        <Image src={"/icons/profile.svg"} alt="menu hamburguer" width={40} height={40} className="ImagemPerfilMobile"/>
+                        <Image src={"/icons/profile.svg"} alt="menu hamburguer" width={40} height={40} className="ImagemPerfilMobile" />
                         <span>Login/Cadastro</span>
                     </div>
                     <div className="LinhaDivisa"></div>
                     <ul className="ContainerListaMob" style={{ display: Menu }}>
-                        <li>Animes</li>
-                        <li>Mangás</li>
+                        <Link href={"/anime"}>
+                            <li>Animes</li>
+                        </Link>
+                        <Link href={"/manga"}>
+                            <li>Mangás</li>
+                        </Link>
                         <li>Notícias</li>
                     </ul>
                 </div>
