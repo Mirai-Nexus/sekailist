@@ -67,3 +67,8 @@ section{
     transition: ease-in-out;
     transition-duration: 50ms;
 }
+@media (max-width: 600px){
+    .arrow{
+        display: none;
+    }
+}
