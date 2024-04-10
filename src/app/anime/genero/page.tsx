@@ -5,6 +5,8 @@ import GeneroList from "@/components/generoList"
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { listcard } from "@/data/listcard";
+import { Suspense } from 'react'
+
 
 export default function AnimeGeneroPage() {
     const searchParams = useSearchParams()
@@ -13,7 +15,9 @@ export default function AnimeGeneroPage() {
     return (
         <div style={{ overflowX: "hidden", maxWidth: "100vw" }}>
             <NavBar />
-            <GeneroList objeto={listcard} generoName={genero}/>
+            <Suspense>
+                <GeneroList objeto={listcard} generoName={genero}/>
+            </Suspense>
             <Footer />
         </div>
     )
