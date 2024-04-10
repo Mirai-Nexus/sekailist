@@ -2,7 +2,7 @@
 import NavBar from "@/components/navbar"
 import Footer from "@/components/footer"
 import GeneroList from "@/components/generoList"
-import { useSearchParams, usePathname } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { listcard } from "@/data/listcard";
 
