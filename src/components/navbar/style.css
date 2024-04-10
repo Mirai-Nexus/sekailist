@@ -55,7 +55,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 980px) {
     .ContainerNavBar {
         padding: 0.5rem 2vw 0 2vw;
     }

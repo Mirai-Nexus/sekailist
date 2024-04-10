@@ -39,3 +39,8 @@
         align-items: center;
     }
   }
+  @media (min-width: 1080px){
+    .ContainerGeneros {
+        width: 65vw;
+    }
+  }
