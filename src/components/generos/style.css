@@ -34,7 +34,7 @@
 }
 @media (max-width: 600px) {
     .ContainerGeneros {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
     }
